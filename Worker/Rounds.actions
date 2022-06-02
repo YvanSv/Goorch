@@ -1,0 +1,18 @@
+1:1 lettre minimum par mot
+2:
+3:Roue du nombre de 1 à 5
+4:2 lettres minimum par mot
+5:Question
+6:Roue du nombre de 2 à 6
+7:Le premier obtient un malus x0.5
+8:3 lettres minimum par mot
+9:Roue du nombre de 3 à 7|Chaque joueur place un malus x0.5 et un bonus x1.25 chez un adversaire
+10:Question
+11:4 lettres minimum par mot
+12:Roue du nombre de 4 à 8
+13:5 lettres minimum par mot
+14:Le premier obtient un malus x0.5
+15:Roue du nombre de 5 à 9|Question
+16:Le deuxième obtient un bonus x2 mauvais score
+17:6 lettres minimum par mot
+18:Roue du nombre de 6 à 10|Le joueur qui obtient le plus mauvais score durant ce round voit son score multiplier par 2 !
