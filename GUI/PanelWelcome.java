@@ -11,6 +11,7 @@ import java.awt.event.*;
 public class PanelWelcome extends JPanel implements ActionListener {
     private Controleur c;
     private JComboBox<String> cbNbPlayers;
+    private JComboBox<String> cbResolutions;
     private JButton btnGo;
     private int wasSelected;
     private JTextField[] lstPseudo;
@@ -21,18 +22,26 @@ public class PanelWelcome extends JPanel implements ActionListener {
     {
         this.c = c;
 
-        this.btnGo = new JButton("Let's go !");
-
         String[] optionsToChoose = {"2","3","4","5","6"};
         this.cbNbPlayers = new JComboBox<>(optionsToChoose);
+        String[] resols  = {"1920x1080","1760x990","1600x900","1440x810","1280x720","1120x630"};
+        this.cbResolutions = new JComboBox<>(resols);
+        this.btnGo = new JButton("Let's go !");
+
+        this.add(new JLabel("Resolution : "));
+        this.add(this.cbResolutions);
         this.add(new JLabel("Number of players : "));
         this.add(this.cbNbPlayers);
         this.add(this.btnGo);
+
         this.btnGo.addActionListener(this);
     }
 
     public void actionPerformed(ActionEvent e)
     {
+        // Pour la résolution
+        float ratio = Float.parseFloat((this.cbResolutions.getSelectedItem()+"").split("x")[0]) / 1600;
+        this.c.setRatio(ratio);
         int select = Integer.parseInt(""+this.cbNbPlayers.getSelectedItem());
 
         if (e.getSource().equals(this.btnGo))
@@ -55,6 +64,7 @@ public class PanelWelcome extends JPanel implements ActionListener {
                 pseudos[i] = this.lstPseudo[i].getText();
             
             this.c.setPseudos(pseudos);
+            this.c.printStart();
         }
 
         this.c.resize();
