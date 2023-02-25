@@ -5,6 +5,7 @@
 ./Worker/Player.java
 ./Worker/Research.java
 ./Worker/Utils.java
+./Worker/Research.java
 ./GUI/Frame.java
 ./GUI/PanelWelcome.java
 ./GUI/Start/PanelMultiActions.java
