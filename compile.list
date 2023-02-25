@@ -3,12 +3,11 @@
 ./Controleur.java
 ./Worker/Game.java
 ./Worker/Player.java
+./Worker/Research.java
 ./Worker/Utils.java
 ./GUI/Frame.java
 ./GUI/PanelWelcome.java
-./GUI/Start/PanelImages.java
 ./GUI/Start/PanelMultiActions.java
 ./GUI/Start/PanelRecap.java
-./GUI/Start/PanelRounds.java
 ./GUI/Start/PanelRoundsAndImages.java
 ./GUI/Start/PanelStart.java

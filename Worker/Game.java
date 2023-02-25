@@ -1,5 +1,7 @@
 package Goorch.Worker;
+
 import java.util.ArrayList;
+import Goorch.Worker.Research;
 
 public class Game {
     private ArrayList<Player> alPlayers = new ArrayList<Player>();

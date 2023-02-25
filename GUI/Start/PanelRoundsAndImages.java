@@ -26,7 +26,7 @@ class PanelImages extends JPanel{
 
         for (int i = indexBegin; i < indexBegin + 9; i++)
             try { if (grid[i].contains("")) this.add(new PanelMultiActions(grid[i], c)); }
-            catch(Exception e) {this.add(new JLabel());}
+            catch(Exception e) {System.out.println("nope"); this.add(new JLabel());}
 
         this.setOpaque(false);
     }

@@ -1,5 +1,7 @@
 package Goorch.Worker;
 
+import Goorch.Worker.Game;
+
 public class Player {
     public static int idPlayers = 0;
     private String pseudo;
